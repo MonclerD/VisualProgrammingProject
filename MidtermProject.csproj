@@ -420,5 +420,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="pictures\2560px-Amer_Sports_Logo.svg.png" />
+    <Content Include="pictures\air-plane.png" />
+    <Content Include="pictures\amerBrands.PNG" />
+    <Content Include="pictures\cargo.png" />
+    <Content Include="pictures\email.png" />
+    <Content Include="pictures\group.png" />
+    <Content Include="pictures\help-web-button.png" />
+    <Content Include="pictures\info.png" />
+    <Content Include="pictures\operator.png" />
+    <Content Include="pictures\patent.png" />
+    <Content Include="pictures\phone.png" />
+    <Content Include="pictures\sent.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
