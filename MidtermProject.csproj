@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68D48A98-5503-4A46-BD03-93A30A35F600}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MidtermProject</RootNamespace>
+    <AssemblyName>MidtermProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Amer Sports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amer Sports.Designer.cs">
+      <DependentUpon>Amer Sports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContectUsWilson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContectUsWilson.Designer.cs">
+      <DependentUpon>ContectUsWilson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factory.Designer.cs">
+      <DependentUpon>Factory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factory2.Designer.cs">
+      <DependentUpon>Factory2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadquarterSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadquarterSecond.Designer.cs">
+      <DependentUpon>HeadquarterSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patents.Designer.cs">
+      <DependentUpon>Patents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SportingGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SportingGoods.Designer.cs">
+      <DependentUpon>SportingGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse.Designer.cs">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseCheckOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseCheckOrders.Designer.cs">
+      <DependentUpon>WarehouseCheckOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeAreWilson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeAreWilson.Designer.cs">
+      <DependentUpon>WeAreWilson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WilsonSportingGoodsDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilsonSportingGoodsDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Amer Sports.resx">
+      <DependentUpon>Amer Sports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContectUsWilson.resx">
+      <DependentUpon>ContectUsWilson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factory.resx">
+      <DependentUpon>Factory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factory2.resx">
+      <DependentUpon>Factory2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadquarterSecond.resx">
+      <DependentUpon>HeadquarterSecond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patents.resx">
+      <DependentUpon>Patents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SportingGoods.resx">
+      <DependentUpon>SportingGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse.resx">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseCheckOrders.resx">
+      <DependentUpon>WarehouseCheckOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeAreWilson.resx">
+      <DependentUpon>WeAreWilson.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WilsonSportingGoodsDataSet.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet1.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet1.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet10.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet10.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet11.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet11.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet12.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet12.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet13.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet13.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet2.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet2.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet3.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet3.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet4.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet4.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet5.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet5.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet6.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet6.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet7.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet7.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet8.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet8.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet9.xsc">
+      <DependentUpon>WilsonSportingGoodsDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilsonSportingGoodsDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilsonSportingGoodsDataSet9.xss">
+      <DependentUpon>WilsonSportingGoodsDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
