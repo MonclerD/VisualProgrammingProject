@@ -48,7 +48,7 @@ namespace MidtermProject
 
             DataTable dt2 = new DataTable();
             SqlDataAdapter adapter2 = new SqlDataAdapter("SELECT StringSerialNumber, StringModel, StringPriceDolar, StringQuantity FROM String", @"Data Source=DESKTOP-QNGM232\SQLEXPRESS;Initial Catalog=WilsonSportingGoods;Integrated Security=True");
-            adapter1.Fill(dt2);
+            adapter2.Fill(dt2);
             dataGridString.DataSource = dt2;
 
             dataGridString.Columns[0].Width = 125;
@@ -58,7 +58,7 @@ namespace MidtermProject
 
             DataTable dt3 = new DataTable();
             SqlDataAdapter adapter3 = new SqlDataAdapter("SELECT RacketGripSerialNumber, RacketGripModel, RacketGripPriceDolar, RacketGripQuantity FROM RacketGrip", @"Data Source=DESKTOP-QNGM232\SQLEXPRESS;Initial Catalog=WilsonSportingGoods;Integrated Security=True");
-            adapter1.Fill(dt3);
+            adapter3.Fill(dt3);
             dataGridRacketGrip.DataSource = dt3;
 
             dataGridRacketGrip.Columns[0].Width = 125;
@@ -68,6 +68,11 @@ namespace MidtermProject
 
 
 
+
+        }
+
+        private void dataGridString_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

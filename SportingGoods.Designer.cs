@@ -155,6 +155,7 @@ namespace MidtermProject
             this.dataGridString.RowTemplate.Height = 24;
             this.dataGridString.Size = new System.Drawing.Size(1134, 186);
             this.dataGridString.TabIndex = 0;
+            this.dataGridString.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridString_CellContentClick);
             // 
             // stringsBindingSource
             // 

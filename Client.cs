@@ -261,6 +261,18 @@ namespace MidtermProject
 
 
         }
+
+        private void cmbBoxClientID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirmedOrder_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ClientReport CR = new ClientReport();
+            CR.Show();
+        }
     }
     
 }

@@ -65,5 +65,12 @@ namespace MidtermProject
                 //conn.Close();
             }
         }
+
+        private void btnGoToShipping_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ExpeditionInformation Ei1 = new ExpeditionInformation();
+            Ei1.Show();
+        }
     }
 }
