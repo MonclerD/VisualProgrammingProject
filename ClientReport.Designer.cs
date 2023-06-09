@@ -39,6 +39,7 @@ namespace MidtermProject
             this.btnEXITfromReport = new System.Windows.Forms.Button();
             this.lblShippingID = new System.Windows.Forms.Label();
             this.cmbBoxShipping_ID = new System.Windows.Forms.ComboBox();
+            this.btnReturnToPage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientReport)).BeginInit();
             this.grpBoxOrderInformation.SuspendLayout();
             this.SuspendLayout();
@@ -154,11 +155,24 @@ namespace MidtermProject
             this.cmbBoxShipping_ID.Size = new System.Drawing.Size(128, 24);
             this.cmbBoxShipping_ID.TabIndex = 20;
             // 
+            // btnReturnToPage
+            // 
+            this.btnReturnToPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnReturnToPage.ForeColor = System.Drawing.Color.Red;
+            this.btnReturnToPage.Location = new System.Drawing.Point(12, 542);
+            this.btnReturnToPage.Name = "btnReturnToPage";
+            this.btnReturnToPage.Size = new System.Drawing.Size(107, 45);
+            this.btnReturnToPage.TabIndex = 21;
+            this.btnReturnToPage.Text = "&BACK";
+            this.btnReturnToPage.UseVisualStyleBackColor = true;
+            this.btnReturnToPage.Click += new System.EventHandler(this.btnReturnToPage_Click);
+            // 
             // ClientReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1129, 599);
+            this.Controls.Add(this.btnReturnToPage);
             this.Controls.Add(this.cmbBoxShipping_ID);
             this.Controls.Add(this.lblShippingID);
             this.Controls.Add(this.btnEXITfromReport);
@@ -190,5 +204,6 @@ namespace MidtermProject
         private System.Windows.Forms.Button btnEXITfromReport;
         private System.Windows.Forms.Label lblShippingID;
         private System.Windows.Forms.ComboBox cmbBoxShipping_ID;
+        private System.Windows.Forms.Button btnReturnToPage;
     }
 }

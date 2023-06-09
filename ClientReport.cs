@@ -232,5 +232,12 @@ namespace MidtermProject
                 //conn.Close();
             } */
         }
+
+        private void btnReturnToPage_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Client ct = new Client();
+            ct.Show();
+        }
     }
 }
