@@ -48,7 +48,6 @@ namespace MidtermProject
             this.btnOrderClient = new System.Windows.Forms.Button();
             this.mtextOrderDate = new System.Windows.Forms.MaskedTextBox();
             this.ttpClient = new System.Windows.Forms.ToolTip(this.components);
-            this.btnConfirmedOrder = new System.Windows.Forms.Button();
             this.grpBoxProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridStocks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClientPage)).BeginInit();
@@ -199,7 +198,6 @@ namespace MidtermProject
             this.cmbBoxClientID.Size = new System.Drawing.Size(168, 24);
             this.cmbBoxClientID.TabIndex = 2;
             this.ttpClient.SetToolTip(this.cmbBoxClientID, "Client ID provided by Wilson Sporting Goods");
-            this.cmbBoxClientID.SelectedIndexChanged += new System.EventHandler(this.cmbBoxClientID_SelectedIndexChanged);
             // 
             // btnOrderClient
             // 
@@ -224,25 +222,11 @@ namespace MidtermProject
             this.ttpClient.SetToolTip(this.mtextOrderDate, "Date that Client order products");
             this.mtextOrderDate.ValidatingType = typeof(System.DateTime);
             // 
-            // btnConfirmedOrder
-            // 
-            this.btnConfirmedOrder.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnConfirmedOrder.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnConfirmedOrder.ForeColor = System.Drawing.Color.Red;
-            this.btnConfirmedOrder.Location = new System.Drawing.Point(1315, 489);
-            this.btnConfirmedOrder.Name = "btnConfirmedOrder";
-            this.btnConfirmedOrder.Size = new System.Drawing.Size(165, 49);
-            this.btnConfirmedOrder.TabIndex = 15;
-            this.btnConfirmedOrder.Text = "&Order Info";
-            this.btnConfirmedOrder.UseVisualStyleBackColor = false;
-            this.btnConfirmedOrder.Click += new System.EventHandler(this.btnConfirmedOrder_Click);
-            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1529, 717);
-            this.Controls.Add(this.btnConfirmedOrder);
             this.Controls.Add(this.mtextOrderDate);
             this.Controls.Add(this.btnOrderClient);
             this.Controls.Add(this.cmbBoxClientID);
@@ -289,6 +273,5 @@ namespace MidtermProject
         private System.Windows.Forms.Button btnOrderClient;
         private System.Windows.Forms.MaskedTextBox mtextOrderDate;
         private System.Windows.Forms.ToolTip ttpClient;
-        private System.Windows.Forms.Button btnConfirmedOrder;
     }
 }

@@ -33,7 +33,6 @@ namespace MidtermProject
             this.dataGridOrdersWarehouse = new System.Windows.Forms.DataGridView();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnBackToWarehouseHomepage = new System.Windows.Forms.Button();
-            this.btnGoToShipping = new System.Windows.Forms.Button();
             this.grpBoxSeeOrders.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridOrdersWarehouse)).BeginInit();
             this.SuspendLayout();
@@ -85,25 +84,11 @@ namespace MidtermProject
             this.btnBackToWarehouseHomepage.UseVisualStyleBackColor = false;
             this.btnBackToWarehouseHomepage.Click += new System.EventHandler(this.btnBackToWarehouseHomepage_Click_1);
             // 
-            // btnGoToShipping
-            // 
-            this.btnGoToShipping.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnGoToShipping.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGoToShipping.ForeColor = System.Drawing.Color.Red;
-            this.btnGoToShipping.Location = new System.Drawing.Point(814, 517);
-            this.btnGoToShipping.Name = "btnGoToShipping";
-            this.btnGoToShipping.Size = new System.Drawing.Size(126, 51);
-            this.btnGoToShipping.TabIndex = 9;
-            this.btnGoToShipping.Text = "&Shipping";
-            this.btnGoToShipping.UseVisualStyleBackColor = false;
-            this.btnGoToShipping.Click += new System.EventHandler(this.btnGoToShipping_Click);
-            // 
             // WarehouseCheckOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 580);
-            this.Controls.Add(this.btnGoToShipping);
             this.Controls.Add(this.btnBackToWarehouseHomepage);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.grpBoxSeeOrders);
@@ -123,6 +108,5 @@ namespace MidtermProject
         private System.Windows.Forms.DataGridView dataGridOrdersWarehouse;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnBackToWarehouseHomepage;
-        private System.Windows.Forms.Button btnGoToShipping;
     }
 }

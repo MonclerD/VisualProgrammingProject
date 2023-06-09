@@ -106,7 +106,6 @@ namespace MidtermProject
             this.dataGridWarehouseStock.RowTemplate.Height = 24;
             this.dataGridWarehouseStock.Size = new System.Drawing.Size(1230, 187);
             this.dataGridWarehouseStock.TabIndex = 0;
-            this.dataGridWarehouseStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridWarehouseStock_CellContentClick);
             // 
             // btnExit
             // 

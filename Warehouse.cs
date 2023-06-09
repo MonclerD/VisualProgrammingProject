@@ -333,10 +333,5 @@ namespace MidtermProject
             WarehouseCheckOrders whc1 = new WarehouseCheckOrders();
             whc1.Show();
         }
-
-        private void dataGridWarehouseStock_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
