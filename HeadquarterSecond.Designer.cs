@@ -52,6 +52,7 @@ namespace MidtermProject
             this.dataGridProduct = new System.Windows.Forms.DataGridView();
             this.grpBoxOrders23 = new System.Windows.Forms.GroupBox();
             this.dataGridOrderHeadquarter = new System.Windows.Forms.DataGridView();
+            this.btnShipping = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picHeadquarterStockViewPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wilsonSportingGoodsDataSet3)).BeginInit();
@@ -226,12 +227,26 @@ namespace MidtermProject
             this.dataGridOrderHeadquarter.Size = new System.Drawing.Size(669, 275);
             this.dataGridOrderHeadquarter.TabIndex = 0;
             // 
+            // btnShipping
+            // 
+            this.btnShipping.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnShipping.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnShipping.ForeColor = System.Drawing.Color.Red;
+            this.btnShipping.Location = new System.Drawing.Point(1044, 592);
+            this.btnShipping.Name = "btnShipping";
+            this.btnShipping.Size = new System.Drawing.Size(133, 52);
+            this.btnShipping.TabIndex = 5;
+            this.btnShipping.Text = "&Shipping";
+            this.btnShipping.UseVisualStyleBackColor = false;
+            this.btnShipping.Click += new System.EventHandler(this.btnShipping_Click);
+            // 
             // ViewStocks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1352, 656);
+            this.Controls.Add(this.btnShipping);
             this.Controls.Add(this.grpBoxOrders23);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpBoxTransaction);
@@ -284,5 +299,6 @@ namespace MidtermProject
         private System.Windows.Forms.DataGridView dataGridProduct;
         private System.Windows.Forms.GroupBox grpBoxOrders23;
         private System.Windows.Forms.DataGridView dataGridOrderHeadquarter;
+        private System.Windows.Forms.Button btnShipping;
     }
 }

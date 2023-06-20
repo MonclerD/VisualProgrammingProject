@@ -142,5 +142,12 @@ namespace MidtermProject
         {
 
         }
+
+        private void btnShipping_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ExpeditionReview Er = new ExpeditionReview();
+            Er.Show();
+        }
     }
 }
